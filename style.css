@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html, body {
+    height: 100%; /* Garante que o html e o body ocupem toda a altura da viewport */
+    margin: 0; /* Remove margens padrão */
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-color: #DDDDDD; /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    overflow-y: auto; /* Adiciona barras de rolagem vertical quando necessário */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    margin-top: 0; /* Define a margem superior como 0 */
+    font-size: 1rem; /* Define o tamanho da fonte (ajuste conforme necessário) */
+    color: darkgreen; /* Define a cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.1rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza a área de busca */
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo do botão de pesquisa */
+.search-container button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    border: none; /* Remove a borda */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado, caso exista */
+    display: inline-block; /* Mantém o botão em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 10px 0; /* Margem superior e inferior */
+    cursor: pointer; /* Muda o cursor para o estilo de mão ao passar por cima */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    transition: background-color 0.3s ease; /* Anima a mudança de cor de fundo */
+}
+
+/* Efeito de hover */
+.search-container button:hover {
+    background-color: blueviolet; /* Cor de fundo quando o mouse está sobre o botão */
+}
+
+/* Adiciona estilo ao destaque do texto */
+.highlight {
+    background-color: yellow; /* Cor de fundo para o destaque */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.item a {
+    display: block; /* Faz com que o link ocupe a largura total disponível */
+    margin-top: 0; /* Remove a margem superior */
+    padding-top: 0; /* Remove o padding superior */
+    margin-bottom: 10px; /* Adiciona um espaço abaixo do link (ajuste o valor conforme necessário) */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item, .item p, .item a {
+    box-sizing: border-box; /* Inclui padding e border nas dimensões dos elementos */
+}
+
+
+/* Estiliza a imagem */
+.imagem {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: relative; /* Mantém o rodapé na posição padrão do fluxo do documento */
+    margin-top: auto; /* Empurra o rodapé para baixo */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Regras para telas maiores */
+@media (min-width: 769px) {
+        .additional-content {
+            margin-top: 10px; /* Margem superior para telas maiores */
+            padding: 5px; /* Preenchimento interno */
+        }
+    
+        .additional-content h2 {
+            font-size: 1.2rem; /* Tamanho da fonte do título */
+        }
+    
+        .additional-content p {
+            font-size: 0.9rem; /* Tamanho da fonte do parágrafo */
+        }
+    }
+    
